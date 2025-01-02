@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp', 'index.html', 'gs://static-site-deployment-[ci-cd-static-site
+]']
+
+images:
+- 'gcr.io/cloud-builders/gsutil'
